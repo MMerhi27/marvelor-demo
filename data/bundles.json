@@ -1,0 +1,22 @@
+[
+    {
+        "id": "shampoo-conditioner",
+        "name": "Shampoo + Conditioner",
+        "description": "The essential duo for everyday care.",
+        "price": 55,
+        "oldPrice": 60,
+        "image": "img/product/bundles/bundles(1).png",
+        "link": "product.html?type=bundle&id=shampoo-conditioner",
+        "includes": ["shampoo", "conditioner"]
+    },
+    {
+        "id": "complete-routine",
+        "name": "Complete Routine",
+        "description": "Our full ritual for healthier, stronger hair.",
+        "price": 80,
+        "oldPrice": 90,
+        "image": "img/product/bundles/bundles(2).png",
+        "link": "product.html?type=bundle&id=complete-routine",
+        "includes": ["shampoo", "conditioner", "hair-oil", "thermal-cap"]
+    }
+]

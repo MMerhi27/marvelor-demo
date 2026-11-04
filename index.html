@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvelor | Haircare</title>
+    
+    <link rel="icon" type="image/png" href="img/icon/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="brand"><img src="img/icon/logo.bg.png" alt="Marvelor"></a>
+
+            <ul class="nav-links">
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#bundles">Bundles</a></li>
+                <li><a href="#our-story">Our Story</a></li>
+            </ul>
+
+            <button type="button" class="cart-button" aria-label="Open cart"><i class="bi bi-bag" aria-hidden="true"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content container">
+                <div class="hero-image"><img src="img/product/Marvelor-Thermal-Cap1.png" alt="MARVELOR haircare routine"></div>
+                <div class="hero-text">
+                    <p class="hero-label">NATURAL HAIRCARE FOR REAL LIFE</p>
+                    <h1>A little nature. A daily ritual.</h1>
+                    <p>Thoughtfully crafted haircare for your everyday ritual.</p>
+                    <a href="#shop" class="shop-button">Shop Our Collection <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="shop">
+            <div class="container">
+                <h2>Our Collection</h2>
+                <div class="products-grid">
+                </div>
+            </div>
+        </section>
+
+        <section class="bundles" id="bundles">
+            <div class="container">
+                <div class="bundles-content">
+                    <div class="bundles-text">
+                        <p class="bundles-label">BUNDLES & SAVE</p>
+                        <h2>Better Together</h2>
+                        <p>Complete care for stronger, healthier, more beautiful hair.</p>
+                    </div>
+                    <div class="bundles-grid"></div>
+                </div>
+            </div>
+        </section>
+            <section class="rituals">
+                <div class="container rituals-content">
+                    <div class="rituals-text">
+                        <h2>HAIR RITUALS IN REAL LIFE</h2>
+                        <P>Real moments. Real haircare. Discover how MARVELOR fits into your everyday routine.</P>
+                    </div>
+
+                    <div class="rituals-grid">
+                        <div class="ritual-card"></div>
+                        <div class="ritual-card"></div>
+                        <div class="ritual-card"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="our-story" id="our-story">
+                <div class="container story-content">
+                    <div class="story-img"><img src="img/product/Miracle Maker Conditioner/Miracle Maker Conditioner-250ml(3).png" alt="MARVELOR haircare products" loading="lazy"></div>
+                        <div class="story-text">
+                            <h2>Our Story</h2>
+                            <p>MARVELOR is a luxurious organic brand crafted with precision in Lebanon. Infused with natural ingredients, our haircare brings a touch of elegance to your everyday ritual.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="site-footer">
+                <div class="container footer-content">
+                    <a href="index.html" class="footer-brand">
+                        <img src="img/icon/logo.bg.png" alt="Marvelor">
+                    </a>
+
+                    <div class="footer-links">
+                        <a href="https://www.instagram.com/marvelor.lb?utm_source=ig_web_button_share_sheet&cplk=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" aria-label="instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                        <a href="mailto:Adm.marvelor.lb@gmail.com" aria-label="Email us"><i class="bi bi-envelope-at" aria-hidden="true"></i></a>
+                    </div>
+
+                    <p class="copyright">© 2026 MARVELOR. All rights reserved.</p>
+                </div>
+            </footer>
+
+            <dialog class="cart-panel" aria-labelledby="cart-title">
+                <div class="cart-header">
+                    <h2 id="cart-title">Your Cart</h2>
+                    <button type="button" class="cart-close" aria-label="Close cart">Close</button>
+                </div>
+                
+                <div class="cart-items"></div>
+                <div class="cart-summary">
+                    <p>Subtotal: <span class="cart-total">$0</span></p>
+                    <button type="button" class="checkout-button" disabled>Checkout</button>
+                </div>
+            </dialog>
+
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

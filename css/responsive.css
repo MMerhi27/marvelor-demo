@@ -1,0 +1,598 @@
+/* start layout protection */
+.hero-content > *,
+.bundles-content > *,
+.rituals-content > *,
+.story-content > *,
+.product-details-content > *{
+    min-width: 0;
+}
+
+.products-grid,
+.bundles-grid,
+.rituals-grid{
+    min-width: 0;
+}
+
+.product-info h3,
+.bundle-info h3,
+.details-name,
+.cart-item-name{
+    overflow-wrap: anywhere;
+}
+/* end layout protection */
+
+/* start card alignment */
+.product-card,
+.bundle-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info,
+.bundle-info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-link,
+.bundle-link{
+    margin-top: auto;
+}
+/* end card alignment */
+
+/* start touch controls */
+.cart-quantity-button{
+    min-width: 44px;
+    height: 44px;
+}
+
+.cart-close,
+.cart-item-remove,
+.footer-links a{
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links a{
+    min-width: 44px;
+}
+
+.product-actions{
+    flex-wrap: wrap;
+}
+
+.product-quantity-controls{
+    flex-shrink: 0;
+}
+/* end touch controls */
+
+/* start laptop */
+@media (max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+
+    .hero-content,
+    .story-content,
+    .product-details-content{
+        gap: 36px;
+    }
+
+    .hero-text h1,
+    .bundles-text h2{
+        font-size: 52px;
+    }
+
+    .rituals-text h2{
+        font-size: 44px;
+    }
+
+    .products-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .bundles-content,
+    .rituals-content{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .bundles-text,
+    .rituals-text{
+        flex: auto;
+        text-align: center;
+    }
+
+    .bundles-text h2,
+    .bundles-text > p:last-child,
+    .rituals-text p{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bundles-grid,
+    .rituals-grid{
+        flex: auto;
+        width: 100%;
+    }
+
+    .details-name{
+        font-size: 40px;
+    }
+
+    .product-gallery{
+        max-width: 440px;
+    }
+}
+/* end laptop */
+
+/* start tablet */
+@media (max-width: 900px){
+    /* start spacing */
+    section{
+        padding: 60px 0;
+    }
+    /* end spacing */
+
+    /* start navbar */
+    .navbar .nav-links{
+        gap: 24px;
+    }
+
+    .navbar .brand img{
+        width: 170px;
+    }
+    /* end navbar */
+
+    /* start section layouts */
+    .hero-content,
+    .story-content,
+    .product-details-content{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 32px;
+    }
+
+    .hero-image,
+    .hero-text,
+    .story-img,
+    .story-text,
+    .product-gallery,
+    .product-details-info{
+        flex: auto;
+        width: 100%;
+    }
+    /* end section layouts */
+
+    /* start hero */
+    .hero{
+        padding: 40px 0;
+    }
+
+    .hero-image{
+        max-width: 480px;
+        margin-inline: auto;
+    }
+
+    .hero-image img{
+        width: 100%;
+    }
+
+    .hero-text{
+        text-align: center;
+    }
+
+    .hero-text > p{
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* end hero */
+
+    /* start our story */
+    .story-img{
+        max-width: 400px;
+        margin-inline: auto;
+    }
+
+    .story-text{
+        text-align: center;
+    }
+
+    .story-text p{
+        margin-inline: auto;
+    }
+    /* end our story */
+
+    /* start product details */
+    .product-gallery{
+        max-width: 480px;
+        margin-inline: auto;
+    }
+
+    .product-details-info{
+        max-width: 650px;
+        margin-inline: auto;
+    }
+    /* end product details */
+
+    /* start bundles */
+    .bundles{
+        padding: 80px 0 60px;
+    }
+    /* end bundles */
+
+    /* start footer */
+    .footer-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .copyright{
+        width: 100%;
+        text-align: center;
+    }
+    /* end footer */
+}
+/* end tablet */
+
+/* start mobile */
+@media (max-width: 600px){
+    /* start spacing */
+    .container{
+        width: calc(100% - 32px);
+    }
+
+    section{
+        padding: 44px 0;
+        scroll-margin-top: 140px;
+    }
+    /* end spacing */
+
+    /* start navbar */
+    .navbar{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 8px 16px;
+        padding: 12px 0;
+    }
+
+    .navbar .brand{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: start;
+    }
+
+    .navbar .brand img{
+        width: 150px;
+    }
+
+    .navbar .cart-button{
+        grid-column: 2;
+        grid-row: 1;
+        min-width: 44px;
+        min-height: 44px;
+        padding: 6px;
+    }
+
+    .navbar .nav-links{
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4px 24px;
+        font-size: 14px;
+    }
+
+    .navbar .nav-links a{
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+    }
+    /* end navbar */
+
+    /* start hero */
+    .hero{
+        padding: 24px 0 40px;
+        background-image: url("../img/hero-mobile-bg.png");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .hero-content{
+        gap: 28px;
+    }
+
+    .hero-image{
+        max-width: 360px;
+    }
+
+    .hero-text h1{
+        font-size: 42px;
+    }
+
+    .hero-text .hero-label{
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .hero-text p{
+        font-size: 16px;
+    }
+
+    .shop-button{
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    /* end hero */
+
+    /* start products */
+    .products h2{
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+    .products-grid{
+        gap: 12px;
+    }
+
+    .product-card{
+        border-radius: 14px;
+    }
+
+    .product-info{
+        padding: 14px 10px;
+    }
+
+    .product-info h3{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .product-size{
+        font-size: 12px;
+    }
+
+    .product-price{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .product-link{
+        min-height: 44px;
+        align-items: center;
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+    /* end products */
+
+    /* start bundles */
+    .bundles{
+        padding: 64px 0 44px;
+        background-image: url("../img/bundles-mobile-bg.png");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .bundles-text h2{
+        font-size: 44px;
+    }
+
+    .bundles-grid{
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        max-width: 420px;
+        margin-inline: auto;
+    }
+
+    .bundle-info{
+        padding: 20px;
+    }
+    /* end bundles */
+
+    /* start rituals */
+    .rituals-text h2{
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .rituals-grid{
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: 76%;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 12px;
+    }
+
+    .ritual-card{
+        scroll-snap-align: start;
+        border-radius: 16px;
+    }
+    /* end rituals */
+
+    /* start our story */
+    .our-story{
+        padding-top: 24px;
+    }
+
+    .story-text h2{
+        font-size: 40px;
+    }
+
+    .story-text p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .story-img{
+        max-width: 360px;
+        border-radius: 20px;
+    }
+    /* end our story */
+
+    /* start product details */
+    .product-details-content{
+        gap: 28px;
+    }
+
+    .product-gallery{
+        max-width: 400px;
+        border-radius: 20px;
+    }
+
+    .details-name{
+        font-size: 36px;
+    }
+
+    .details-price{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .details-description{
+        font-size: 16px;
+    }
+
+    .product-actions{
+        gap: 12px;
+    }
+
+    .product-actions > label{
+        font-size: 14px;
+    }
+
+    .product-actions .add-to-cart{
+        width: 100%;
+        min-height: 48px;
+    }
+
+    #product-quantity{
+        font-size: 16px;
+    }
+
+    .details-extra{
+        margin-top: 24px;
+        padding-top: 20px;
+    }
+
+    .details-extra h2{
+        font-size: 17px;
+    }
+
+    .details-benefits,
+    .details-includes{
+        font-size: 15px;
+    }
+
+    .cart-message{
+        margin-top: 12px;
+        font-size: 14px;
+    }
+    /* end product details */
+
+    /* start footer */
+    .site-footer{
+        padding: 28px 0;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-brand img{
+        width: 160px;
+    }
+
+    .copyright{
+        font-size: 12px;
+    }
+    /* end footer */
+
+    /* start cart */
+    .cart-panel{
+        width: 100%;
+        max-width: 420px;
+        padding: 20px;
+        padding-bottom: max(20px, env(safe-area-inset-bottom));
+        overscroll-behavior-y: contain;
+    }
+
+    .cart-header h2{
+        font-size: 30px;
+    }
+
+    .cart-item{
+        gap: 12px;
+    }
+
+    .cart-item-name{
+        font-size: 14px;
+    }
+
+    .cart-item-image{
+        width: 72px;
+        height: 90px;
+    }
+
+    .cart-summary > p{
+        font-size: 17px;
+    }
+    /* end cart */
+}
+/* end mobile */
+
+/* start narrow mobile */
+@media (max-width: 360px){
+    .navbar .nav-links{
+        gap: 4px 16px;
+    }
+
+    .hero-text h1{
+        font-size: 36px;
+    }
+
+    .products-grid{
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .product-info h3{
+        font-size: 17px;
+    }
+
+    .product-link{
+        font-size: 14px;
+    }
+
+    .details-name{
+        font-size: 32px;
+    }
+
+    .cart-panel{
+        padding: 16px;
+    }
+
+    .cart-item-image{
+        width: 60px;
+        height: 80px;
+    }
+}
+/* end narrow mobile */
+
+/* start reduced motion */
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+}
+/* end reduced motion */

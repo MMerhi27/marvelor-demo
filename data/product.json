@@ -1,0 +1,67 @@
+[
+    {
+        "id": "shampoo",
+        "name": "Miracle Maker Shampoo",
+        "size": "250 ml",
+        "description": "Haircare for men and women, designed to gently cleanse the scalp.",
+        "benefits": [
+            "Helps reduce hair fall",
+            "Promotes hair growth",
+            "Gently cleanses the scalp"
+        ],
+        "howToUse": "Apply to wet hair, gently massage into the scalp, then rinse thoroughly. Repeat if needed.",
+        "recommendedUse": "Use 2-3 times per week or as needed, depending on your hair-washing routine.",
+        "price": 33,
+        "image": "img/product/Miracle Maker Shampo/Miracle Maker Conditioner-250ml(4).png",
+        "link": "product.html?id=shampoo"
+    },
+    {
+        "id": "conditioner",
+        "name": "Miracle Maker Conditioner",
+        "size": "250 ml",
+        "description": "Conditioning care for men and women, for softer, smoother hair.",
+        "benefits": [
+            "Helps soften and smooth hair",
+            "Helps reduce tangles and improve manageability",
+            "Nourishes hair with rich butters and botanical ingredients",
+            "Helps protect hair and enhance its natural shine"
+        ],
+        "howToUse": "After shampooing, apply the conditioner to wet hair, focusing on the lengths and ends. Leave on for 5 to 10 minutes, then rinse thoroughly with lukewarm water.",
+        "recommendedUse": "Use 2-3 times per week or as needed, depending on your hair-washing routine.",
+        "price": 27,
+        "image": "img/product/Miracle Maker Conditioner/Miracle Maker Conditioner-250ml(1).png",
+        "link": "product.html?id=conditioner"
+    },
+    {
+        "id": "hair-oil",
+        "name": "Secret Hair Oil",
+        "size": "100 ml",
+        "description": "Hair oil for men and women, designed for scalp and hair care.",
+        "benefits": [
+            "Helps reduce hair fall",
+            "Stimulates slow and inactive follicles",
+            "Soothes the scalp",
+            "Promotes longer, thicker and healthier hair"
+        ],
+        "howToUse": "Shake well before use. Apply the oil to damp or dry hair. Massage your scalp for 5-10 minutes, then leave on for 45-60 minutes.",
+        "recommendedUse": "",
+        "price": 25,
+        "image": "img/product/secret hair oil/secret-hai-oil(4).png",
+        "link": "product.html?id=hair-oil"
+    },
+    {
+        "id": "thermal-cap",
+        "name": "Marvelor Thermal Cap",
+        "size": "",
+        "description": "A thermal cap for your haircare treatment routine.",
+        "benefits": [
+            "Enhances oil and mask absorption with gentle heat",
+            "Helps support moisture, repair and hair growth"
+        ],
+        "howToUse": "",
+        "recommendedUse": "",
+        "price": 5,
+        "image": "img/product/Marvelor Thermal Cap/Marvelor-Thermal-Cap(3).png",
+        "link": "product.html?id=thermal-cap"
+    }
+]
